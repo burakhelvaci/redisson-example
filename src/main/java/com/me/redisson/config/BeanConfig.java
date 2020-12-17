@@ -10,11 +10,14 @@ import org.springframework.context.annotation.Configuration;
 
 import java.io.IOException;
 
+/**
+ * @author Burak Helvacı
+ */
 @Configuration
 public class BeanConfig {
 
   @Bean
-  @ConfigurationProperties("spring.data.redisson")
+  @ConfigurationProperties("redis.redisson")
   public RedissonProperties redissonProperties() {
     return new RedissonProperties();
   }

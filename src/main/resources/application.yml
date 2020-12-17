@@ -1,6 +1,4 @@
-spring:
-  data:
-    redis:
-      address: redis://127.0.0.1:6379
+redis:
+  address: redis://127.0.0.1:6379
 server:
   port: 8080
